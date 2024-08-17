@@ -4,6 +4,7 @@
     src: url('../fuentes/Roboto/Roboto-Regular.ttf');
 }
 
+/*Variables*/
 :root {
     --backgroundBlue: rgb(34, 31, 83);
     --backgoundGrey: rgb(230, 230, 230);
@@ -55,21 +56,18 @@
     color: var(--white);
     font-size: .7rem
 }
-/* fin seccion encabezado */
 
 /* seccion landing */
 .landing {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     background-color: var(--green);
 }
 
 .landing-image {
     width: 100%;
-    height: 55vh;
+    height: 45vh;
 }
-/* fin seccion landing */
-
 
 /*default titulos*/
 .title-default {
@@ -118,11 +116,11 @@
     }
 
     .landing {
-        height: 75vh;
+        height: 65vh;
     }
     
     .landing-image {
-        height: 70vh;
+        height: 60vh;
     }
 
 }
@@ -130,10 +128,11 @@
 @media only screen and (min-width: 900px) {
 
     .landing {
-        height: 95vh;
+        height: 85vh;
     }
+
     .landing-image {
-        height: 90vh;
+        height: 80vh;
     }
 
     .imagen-historia {
@@ -161,89 +160,24 @@
         font-size: 1rem;
         line-height: 1.8rem;
     }
-
 }
 
+@media only screen and (min-width: 1400px) {
 
+    .landing {
+        height: 95vh;
+    }
 
-/*
-.contentSection {
-    display: grid;
-    grid-template-columns: 35% 30% 40%;
-    grid-template-rows: 1.8rem 6rem 14rem 8rem;
-    padding: 0 7rem;
-    margin-top: -2rem;
+    .landing-image {
+        height: 90vh;
+    }
+
+    .section-container {
+        padding: 4rem 6rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
 }
-
-
-
-
-
-
-
-
-.subtitle {
-    font-size: 1.5rem;
-}
-
-
-
-
-.contentTextOne {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    margin: 0;
-    padding-right: 8rem;
-}
-
-.contentImageOne {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-    width: 100%;
-}
-
-.contentSubtitle {
-    grid-row: 4 / 5;
-}
-
-
-.lowerSection {
-    display: flex;
-    padding: 0 7rem;
-    height: 15rem;
-    gap: 2rem;
-}
-
-.lowerSectionImage {
-    height: 8.5rem;
-}
-
-.contentTextTwo {
-    margin: 0;
-    padding: 0 8rem 0 2rem;
-}
-
-.lowerImage {
-    margin-top: 7rem;
-}
-
-
-
-.subtitulo  {
-    font-size: 30px;
-}
-
-.niveles .titulo  {
-    color: var(--lightBlue);
-}
-.nivel .subtitulo  {
-    color: var(--lightBlue)
-}
-.galeria .titulo  {
-    color: var(--orange);
-}
-
-.nivel {
-    text-align: center;
-}
-*/
