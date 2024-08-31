@@ -1,0 +1,33 @@
+/* seccion encabezado */
+.header {
+    display:flex;
+    background-color: $backgroundBlue;
+    height: 20vh;
+    padding: 0 2rem;
+    border-bottom: 0.2rem solid $green;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-image {
+    @include anchoAlto(5rem, 5rem);
+}
+
+.header-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    text-align: end;
+    line-height: 1.2rem
+}
+
+.header-enlace {
+    text-decoration: none;
+    color: $white;
+    font-size: .7rem;
+
+    &:hover {
+        font-size: 0.8rem;
+    }
+}

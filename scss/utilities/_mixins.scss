@@ -1,0 +1,9 @@
+@mixin estiloTexto ($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin anchoAlto ($width, $height) {
+    width: $width;
+    height: $height;
+}

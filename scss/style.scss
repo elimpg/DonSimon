@@ -1,0 +1,145 @@
+/* font-family, @font-face*/
+@font-face {
+    font-family: 'roboto'; /*nombre definido*/
+    src: url('../fuentes/Roboto/Roboto-Regular.ttf');
+}
+
+@import './base/variables';
+@import './utilities/mixins';
+@import './layout/header';
+@import './utilities/extends';
+@import './layout/footer';
+
+/*Estilos generales de la pagina*/
+* {
+    font-family: 'roboto';
+    color: $textGrey;
+}
+
+.page-container {
+    background-color: $backgoundGrey;
+    padding: 0 0.2rem;
+}
+
+
+/* seccion landing */
+.landing {
+    @include anchoAlto(100%, 50vh);
+    background-color: $green;
+}
+
+.landing-image {
+    @include anchoAlto(100%, 45vh);
+}
+
+/* titulos*/
+.text-orange {
+    @extend .title-default;
+    color: $orange;
+}
+
+.text-lblue {
+    @extend .title-default;
+    color: $lightBlue;
+}
+
+.text {
+    @include estiloTexto(.9rem, 1.3rem);
+}
+
+.level-text {
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 527px) {
+
+    .header {
+        height:4.5rem;
+    }
+
+    .header-menu {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .landing {
+        height: 65vh;
+    }
+    
+    .landing-image {
+        height: 60vh;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .landing {
+        height: 85vh;
+    }
+
+    .landing-image {
+        height: 80vh;
+    }
+
+    .imagen-historia {
+        margin-top: -3rem;
+    }
+
+    .title-default {
+        font-size: 3rem;
+    }
+
+    .header-enlace {
+        font-size: .8rem;
+
+        &:hover {
+            font-size: .9rem;
+        }
+    }
+
+    .page-container {
+        padding: 0;
+    }
+
+    .main-container {
+        padding: 0 2rem;
+    }
+
+    .section-container {
+        padding: 2rem 4rem;
+    }
+
+    .text {
+        @include estiloTexto(1rem, 1.8rem);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .landing {
+        height: 95vh;
+    }
+
+    .landing-image {
+        height: 90vh;
+    }
+
+    .header-enlace {
+        font-size: .9rem;
+
+        &:hover {
+            font-size: 1rem;
+        }
+    }
+
+    .section-container {
+        padding: 4rem 6rem;
+    }
+
+    .text {
+        @include estiloTexto(1.5rem, 2.5rem);
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
