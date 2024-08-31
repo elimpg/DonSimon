@@ -4,7 +4,7 @@
     background-color: $backgroundBlue;
     height: 20vh;
     padding: 0 2rem;
-    border-bottom: 1.5px solid $green;
+    border-bottom: 0.2rem solid $green;
     justify-content: space-between;
     align-items: center;
 }
@@ -25,5 +25,9 @@
 .header-enlace {
     text-decoration: none;
     color: $white;
-    font-size: .7rem
+    font-size: .7rem;
+
+    &:hover {
+        font-size: 0.8rem;
+    }
 }

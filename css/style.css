@@ -3,14 +3,13 @@
   font-family: "roboto"; /*nombre definido*/
   src: url("../fuentes/Roboto/Roboto-Regular.ttf");
 }
-/* imports */
 /* seccion encabezado */
 .header {
   display: flex;
   background-color: rgb(34, 31, 83);
   height: 20vh;
   padding: 0 2rem;
-  border-bottom: 1.5px solid rgb(132, 190, 63);
+  border-bottom: 0.2rem solid rgb(132, 190, 63);
   justify-content: space-between;
   align-items: center;
 }
@@ -33,6 +32,9 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 0.7rem;
+}
+.header-enlace:hover {
+  font-size: 0.8rem;
 }
 
 .title-default, .text-lblue, .text-orange {
@@ -93,7 +95,7 @@
   font-size: 0.8rem;
 }
 
-@media only screen and (min-width: 526px) {
+@media only screen and (min-width: 527px) {
   .header {
     height: 4.5rem;
   }
@@ -119,8 +121,13 @@
     margin-top: -3rem;
   }
   .title-default, .text-orange, .text-lblue {
-    font-weight: 650;
     font-size: 3rem;
+  }
+  .header-enlace {
+    font-size: 0.8rem;
+  }
+  .header-enlace:hover {
+    font-size: 0.9rem;
   }
   .page-container {
     padding: 0;
@@ -142,6 +149,12 @@
   }
   .landing-image {
     height: 90vh;
+  }
+  .header-enlace {
+    font-size: 0.9rem;
+  }
+  .header-enlace:hover {
+    font-size: 1rem;
   }
   .section-container {
     padding: 4rem 6rem;
