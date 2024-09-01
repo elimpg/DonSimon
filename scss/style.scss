@@ -4,51 +4,23 @@
     src: url('../fuentes/Roboto/Roboto-Regular.ttf');
 }
 
-@import './base/variables';
-@import './utilities/extends';
-@import './utilities/mixins';
-@import './layout/header';
-@import './layout/footer';
-@import './layout/contacto';
-
 /*Estilos generales de la pagina*/
 * {
     font-family: 'roboto';
-    color: $textGrey;
 }
+
+@import './base/variables';
+@import './utilities/extends';
+@import './utilities/mixins';
+@import './layout/textos';
+@import './layout/header';
+@import './layout/landing';
+@import './layout/contacto';
+@import './layout/footer';
 
 .page-container {
     background-color: $backgroundGrey;
     padding: 0 0.2rem;
-}
-
-/* seccion landing */
-.landing {
-    @include anchoAlto(100%, 50vh);
-    background-color: $green;
-}
-
-.landing-image {
-    @include anchoAlto(100%, 45vh);
-}
-
-/* titulos*/
-.text-orange {
-    @extend .title-default;
-    color: $orange;
-}
-
-.text-lblue {
-    @extend .title-default;
-    color: $lightBlue;
-}
-
-.text {
-    @include estiloTexto(.9rem, $textGrey, 1.3rem);
-}
-
-.level-text {
-    font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 527px) {
