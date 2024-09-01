@@ -1,0 +1,17 @@
+.contacto-container {
+    background-color: $backgroundBlue;
+}
+
+.contacto-titulo {
+    @extend .title-default;
+    color: $white;
+}
+
+.contacto-subtitulo {
+    @include estiloTexto(.9rem, $white, 1.3rem);
+    font-weight: 650;
+}
+
+.contacto-texto {
+    @include estiloTexto(.8rem, $white, 1.3rem);
+}

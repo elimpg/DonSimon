@@ -1,5 +1,6 @@
-@mixin estiloTexto ($fontSize, $lineHeight) {
+@mixin estiloTexto ($fontSize, $fontColor, $lineHeight) {
     font-size: $fontSize;
+    color: $fontColor;
     line-height: $lineHeight;
 }
 
