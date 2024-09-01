@@ -1,0 +1,18 @@
+/* titulos*/
+.text-orange {
+    @extend .title-default;
+    color: $orange;
+}
+
+.text-lblue {
+    @extend .title-default;
+    color: $lightBlue;
+}
+
+.text {
+    @include estiloTexto(.9rem, $textGrey, 1.3rem);
+}
+
+.level-text {
+    font-size: 0.8rem;
+}

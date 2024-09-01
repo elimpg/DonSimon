@@ -1,0 +1,9 @@
+/* seccion landing */
+.landing {
+    @include anchoAlto(100%, 50vh);
+    background-color: $green;
+}
+
+.landing-image {
+    @include anchoAlto(100%, 45vh);
+}
