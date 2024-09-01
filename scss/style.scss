@@ -5,10 +5,11 @@
 }
 
 @import './base/variables';
+@import './utilities/extends';
 @import './utilities/mixins';
 @import './layout/header';
-@import './utilities/extends';
 @import './layout/footer';
+@import './layout/contacto';
 
 /*Estilos generales de la pagina*/
 * {
@@ -17,10 +18,9 @@
 }
 
 .page-container {
-    background-color: $backgoundGrey;
+    background-color: $backgroundGrey;
     padding: 0 0.2rem;
 }
-
 
 /* seccion landing */
 .landing {
@@ -44,7 +44,7 @@
 }
 
 .text {
-    @include estiloTexto(.9rem, 1.3rem);
+    @include estiloTexto(.9rem, $textGrey, 1.3rem);
 }
 
 .level-text {
@@ -94,7 +94,7 @@
         font-size: .8rem;
 
         &:hover {
-            font-size: .9rem;
+            color: $green;
         }
     }
 
@@ -111,7 +111,7 @@
     }
 
     .text {
-        @include estiloTexto(1rem, 1.8rem);
+        @include estiloTexto(1rem, $textGrey, 1.8rem);
     }
 }
 
@@ -129,7 +129,7 @@
         font-size: .9rem;
 
         &:hover {
-            font-size: 1rem;
+            color: $green;
         }
     }
 
@@ -138,7 +138,7 @@
     }
 
     .text {
-        @include estiloTexto(1.5rem, 2.5rem);
+        @include estiloTexto(1.5rem, $textGrey, 2.5rem);
     }
 }
 
