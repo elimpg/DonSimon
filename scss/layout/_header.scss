@@ -1,25 +1,16 @@
 /* seccion encabezado */
-.header {
-    display:flex;
+.headerDS {
     background-color: $backgroundBlue;
-    height: 20vh;
-    padding: 0 2rem;
     border-bottom: 0.2rem solid $green;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.togglerDS {
+    color: $white;
+    border: none;
 }
 
 .header-image {
     @include anchoAlto(5rem, 5rem);
-}
-
-.header-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    text-align: end;
-    line-height: 1.2rem
 }
 
 .header-enlace {
@@ -29,5 +20,22 @@
 
     &:hover {
         color: $green;
+    }
+}
+
+.activeLink {
+    color: $green;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 900px) {
+    .header-enlace {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .header-enlace {
+        font-size: .9rem;
     }
 }

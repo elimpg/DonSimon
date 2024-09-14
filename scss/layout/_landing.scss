@@ -7,3 +7,39 @@
 .landing-image {
     @include anchoAlto(100%, 45vh);
 }
+
+
+@media only screen and (min-width: 527px) {
+    
+    .landing {
+        height: 65vh;
+    }
+    
+    .landing-image {
+        height: 60vh;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .landing {
+        height: 85vh;
+    }
+
+    .landing-image {
+        height: 80vh;
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+    .landing {
+        height: 95vh;
+    }
+
+    .landing-image {
+        height: 90vh;
+    }
+}

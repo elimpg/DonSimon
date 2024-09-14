@@ -12,106 +12,12 @@
 @import './base/variables';
 @import './utilities/extends';
 @import './utilities/mixins';
+@import './layout/containers';
 @import './layout/textos';
 @import './layout/header';
 @import './layout/landing';
 @import './layout/contacto';
 @import './layout/footer';
 
-.page-container {
-    background-color: $backgroundGrey;
-    padding: 0 0.2rem;
-}
-
-@media only screen and (min-width: 527px) {
-
-    .header {
-        height:4.5rem;
-    }
-
-    .header-menu {
-        display: flex;
-        gap: 1rem;
-    }
-    
-    .landing {
-        height: 65vh;
-    }
-    
-    .landing-image {
-        height: 60vh;
-    }
-
-}
-
-@media only screen and (min-width: 900px) {
-
-    .landing {
-        height: 85vh;
-    }
-
-    .landing-image {
-        height: 80vh;
-    }
-
-    .imagen-historia {
-        margin-top: -3rem;
-    }
-
-    .title-default {
-        font-size: 3rem;
-    }
-
-    .header-enlace {
-        font-size: .8rem;
-
-        &:hover {
-            color: $green;
-        }
-    }
-
-    .page-container {
-        padding: 0;
-    }
-
-    .main-container {
-        padding: 0 2rem;
-    }
-
-    .section-container {
-        padding: 2rem 4rem;
-    }
-
-    .text {
-        @include estiloTexto(1rem, $textGrey, 1.8rem);
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-
-    .landing {
-        height: 95vh;
-    }
-
-    .landing-image {
-        height: 90vh;
-    }
-
-    .header-enlace {
-        font-size: .9rem;
-
-        &:hover {
-            color: $green;
-        }
-    }
-
-    .section-container {
-        padding: 4rem 6rem;
-    }
-
-    .text {
-        @include estiloTexto(1.5rem, $textGrey, 2.5rem);
-    }
-}
 
 /*# sourceMappingURL=style.css.map */

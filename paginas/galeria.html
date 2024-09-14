@@ -14,18 +14,25 @@
     </head>
 <body>
     <div class="page-container"> <!-- contenedor general de la pagina-->
-        <header class="header">
-            <img class="header-image" src="../imagenes/logo-don-simon.svg" alt="Logo">
-            <nav> <!-- Navegacion -->
-                <ul class="header-menu">
-                    <li><a class="header-enlace" href="../index.html">EL COLEGIO</a></li>
-                    <li><a class="header-enlace" href="#">GALERÍA</a></li>
-                    <li><a class="header-enlace" href="./grupos.html">GRUPOS</a></li>                
-                    <li><a class="header-enlace" href="./contacto.html">CONTACTO</a></li>
-                    <li><a class="header-enlace" href="./preinscripcion.html">PREINSCRIPCIÓN</a></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary p-0" data-bs-theme="dark">
+            <div class="headerDS container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="header-image" src="../imagenes/logo-don-simon.svg" alt="Logo Don Simón"></a>
+            <button class="navbar-toggler togglerDS" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link header-enlace" href="../index.html">EL COLEGIO</a></li>
+                        <li class="nav-item"><a class="nav-link header-enlace activeLink" href="#">GALERÍA</a></li>
+                        <li class="nav-item"><a class="nav-link header-enlace" href="./grupos.html">GRUPOS</a></li>                
+                        <li class="nav-item"><a class="nav-link header-enlace" href="./contacto.html">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link header-enlace" href="./preinscripcion.html">PREINSCRIPCIÓN</a></li>
+                    </ul>               
+                </div>
+            </div>
+        </nav>
+      </header>
         <main class="main-container min-vh-100"> <!-- Seccion galeria -->
             <h1 class="text-lblue px-4 py-3">Galería</h1>
             <section class="px-4 mb-4">
@@ -34,34 +41,34 @@
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../imagenes/ninios-en-don-simon-1.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-1.jpg" class="d-block w-100" alt="Jugando con Juego de Corchetes">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-2.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-2.jpg" class="d-block w-100" alt="Jugando con Juego de Corchetes">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-3.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-3.jpg" class="d-block w-100" alt="Niños en la sala">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-4.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-4.jpg" class="d-block w-100" alt="Proyectos con tempera">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-5.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-5.jpg" class="d-block w-100" alt="Proyectos con tempera">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-6.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-6.jpg" class="d-block w-100" alt="Proyectos con tempera">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-7.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-7.jpg" class="d-block w-100" alt="Proyectos con tempera">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-8.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-8.jpg" class="d-block w-100" alt="Jugando con agua y espuma">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-9.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-9.jpg" class="d-block w-100" alt="Jugando con agua y espuma">
                           </div>
                           <div class="carousel-item">
-                            <img src="../imagenes/ninios-en-don-simon-10.jpg" class="d-block w-100" alt="Niños en Don Simon">
+                            <img src="../imagenes/ninios-en-don-simon-10.jpg" class="d-block w-100" alt="Jugando con agua y espuma">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
